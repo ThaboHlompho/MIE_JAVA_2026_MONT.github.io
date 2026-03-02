@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio by Thabo Monei</title>
-	<link rel="stylesheet" href="css/Style.css">
+    <title>Portfolio by Thabo Monei</title>
+    	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div>
-		<header class="header">
-	
+
+    <header class="header">
+
 		<!--Navigation bar-->
-		<nav class="navbar">
-		<div class="nav-brand">
-			<img class="logo" src="images/logo1.jpeg" alt="Initials of Thabo Monei" id="logo">
-		</div>
-			<ul class="nav-menu">	
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Work">Work</a></li>
-				<li><a href="#Contact">Contact</a></li>	
-			</ul>
-		</nav>
-		
-		</header>
-	</div>
-	
-			<!--Home section-->
-	<section id="Home">
-		<div class="home-container">
-			<div class="home-container-left">
-			<h1 color="(#f0ba00)"><em>Hello, I am</em><br>
-			<strong>Thabo Hlompho Monei</strong>
-		
-			</h1>
-			<h2>Front-end developer</h2>
-	
-			<!--Bio-->
-			<p><em>I am a front-end developer in the software development space.<br>
-			Was part of a group project where we created a finance web app.<br>
-			Majored in networks and hold three Microsoft certificates.
-			<em></p>
-				
-				<!--pesonal image-->
-				<div home-container-right>
-					<img src="images/IMG_20240315_234700_241.jpg">
-				</div>
-		</div>		
-	</section>
-	
-	<!--About me Section-->
-	<section id="About">
-		<h2>About me</h2>
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <img class="logo" src="images/logo1.jpeg" alt="Initials of Thabo Monei">
+            </div>
+				<ul class="nav-menu">
+            		<li><a href="#Home">Home</a></li>
+            		<li><a href="#About">About</a></li>
+            		<li><a href="#Work">Work</a></li>
+            		<li><a href="#Contact">Contact</a></li>
+            	</ul>
+    	</nav>
+
+    </header>
+
+    <!-- Home section -->
+    <section id="Home" class="section">
+    <div class="container home-container">
+			<div class="home-left">
+                <h1><span>Hello, I am</span><br>
+                <strong>Thabo Hlompho Monei</strong>
+
+                </h1>
+                <h2>Front-end Developer</h2>
+
+				<!--Bio-->
+                <p>
+                    I am a front-end developer in the software development space.
+                    Was part of a group project where we created a finance web app.
+                	Majored in networks and hold three Microsoft certificates.
+                </p>
+            </div>
+
+            <div class="home-right">
+                <img src="images/IMG_20240315_234700_241.jpg" alt="Thabo's Image">
+            </div>
+
+    </div>
+    </section>
+
+    <!-- About me Section -->
+    <section id="About" class="section">
+        <div class="container">
+        <h2>About Me</h2>
 		<p></p>
-		<button><a href="vendor/Soft skills - CV.docx" download class="download-btn">Download CV</a></button>
-	</section>
-	
-	<!---Work Section-->
-	<section id="Work">
-		<h2>Work and projects</h2>
-		
-	</section>
-	
-	<!--Contact Section-->
-	<section id="Contact">
-	<div class="contact-container">
-		<form action="" class="contact-left">
-			<div class="contact-left-title">
-				<h2>Contact me</h2>
-				<hr>
-			</div>
-			<input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
-			<input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
-			<textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
-			<button type="submit">Submit</button>
-		</form>
-		<div class="contact-right">
-		<img src="images/logo2.png" alt="just for practice" >
-		</div>
-	</div>
-	</section>
-	
+        <button class="btn"><a href="vendor/Soft skills - CV.docx" download>Download CV</a></button>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="Work" class="section">
+     <div class="container">
+        <h2>Work & Projects</h2>
+     </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="section">
+        <div class="container contact-container">
+
+            <form class="contact-left">
+                <h2>Contact Me</h2>
+
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <div class="contact-right">
+                <img src="images/logo2.png" alt="Logo">
+            </div>
+
+        </div>
+    </section>
+
 	<footer>
 	</footer>
-	
 </body>
 </html>
