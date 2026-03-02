@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Thabo's portfolio</title>
-<style>
-	img{
-		width: 50px;
-		height: 50px;
-	}
-	
-	body{
-		background-color: #f0ba00; 
-	}
-	h1{
-		color: #ff4700;
-	}
-	.nav_block{
-		margin : auto;
-
-	}
-	<!--rgba(240, 186, 0)<--yello(#f0ba00)--
-	rgba(255, 71, 0)<--orange(#ff4700)--
-	rgba(0, 84, 146)<!--green(#005492)-->
-</style>
+<title>Portfolio by Thabo Monei</title>
+	<link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-	<header>
-		<img src="logo1.jpeg" alt="Initials" id="logo">
-	<nav> <!-- navigation bar -->
-		<div>
-			
-				<a href="#">Home</a>
-			
-			
-				<a href= "#">About</a>
-			
-			
-				<a href= "#">Work</a>
-			
-			
-				<a href= "#">Contact</a>
-			
+	<div>
+		<header class="header">
+	
+		<!--Navigation bar-->
+		<nav class="navbar">
+		<img class="logo" src="logo1.jpeg" alt="Initials of Thabo Monei" id="logo">
+			<ul>	
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Work">Work</a></li>
+			<li><a href="#Contact">Contact</a></li>	
+		</nav>
+		</ul>
+		</header>
+	</div>
+	
+			<!--Home section-->
+	<section id="Home">
+		<h1 color="#f0ba00)"><em>Hello, I am</em><br>
+			<strong>Thabo Hlompho Monei</strong>
+		
+		</h1>
+		<h2>Front-end developer</h2>
+	
+	<!--Bio-->
+		<p><em>I am a front-end developer in the software development space.<br>
+		Was part of a group project where we created a finance web app.<br>
+		Majored in networks and hold three Microsoft certificates.
+		<em></p>		
+	</section>
+	
+	<!--About me Section-->
+	<section id="About">
+		<h2>About me</h2>
+		<p></p>
+	</section>
+	
+	<!---Work Section-->
+	<section id="Work">
+		<h2>Work and projects</h2>
+		
+	</section>
+	
+	<!--Contact Section-->
+	<section id="Contact">
+	<div class="contact-container">
+		<form action="" class="contact-left">
+			<div class="contact-left-title">
+				<h2>Contact me</h2>
+				<hr>
+			</div>
+			<input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+			<input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+			<textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+			<button type="submit">Submit</button>
+		</form>
+		<div class="contact-right">
+		<img src="logo2.png" alt="just for practice" >
 		</div>
-	</nav>
+	</div>
+	</section>
 	
-
-	<h1 color="#f0ba00)"><em>Hello,I am</em><br>
-	<strong>Thabo Hlompho Monei</strong>
-	</h1>
+	<footer>
+	</footer>
 	
-	
-	</header>
 </body>
 </html>
 <!--What are we going to display in our portfolio:

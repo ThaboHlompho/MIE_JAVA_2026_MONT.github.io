@@ -1,0 +1,152 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html:focus-within{
+	scroll-behavior: smooth !important;
+	}
+
+#Home,
+#About,
+#Work,
+#Contact{
+	height: 700px;
+}
+
+.logo{
+	width: 50px;
+		height:50px;
+}
+.navbar{
+	list-style-type: none;
+	display: flex;	
+}
+h1, h2, p {
+	text-align: center;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(270deg,purple, blue);
+	scroll-behavior: smooth;
+}
+	
+.contact-container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.contact-left{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+}
+
+.contact-left-title h2{
+	font-weight: 600px;
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+	border: none;
+	width: 120px;
+	height: 5px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	background-color: purple;
+}
+
+.contact-inputs{
+	width: 400px;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	font-weight: 500px;
+	border-radius: 50px;
+	color: black;
+}
+
+.contact-left textarea{
+	height: 140px;
+	padding-top: 15px;
+	border-radius: 20px;
+}
+
+.contact-inputs:focus{
+	border: 2px solid purple;
+}
+
+.contact-inputs::placeholder{
+	color: #a9a9a9;
+}
+	
+.contact-left button{
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	color: #fff;
+	gap: 10px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(270deg, purple, green);
+	cursor: pointer;
+}
+
+.contact-right img{
+	width: 250px;
+	border-radius: 5px;
+}
+	
+h1{
+	color: #ff4700;
+	margin: 10px;
+}
+.img1{
+	background-color:#f0ba00; 
+}
+	
+	
+ul{		
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#f0ba00;
+}
+ul li {
+	float: left;
+}
+ul li a{
+	display: block;
+	color:black;		
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	}
+	
+ul li a:hover {
+	background-color: #005492;
+	color: white;
+	}
+	
+@media (max-width: 800px){
+	.contact-inputs{
+		width: 80vw;
+	}
+	.contact-right{
+		display: none;
+	}
+}
+	
+	
+	<!--rgba(240, 186, 0)<--yello(#f0ba00)--
+	rgba(255, 71, 0)<--orange(#ff4700)--
+	rgba(0, 84, 146)<!--green(#005492)-->
