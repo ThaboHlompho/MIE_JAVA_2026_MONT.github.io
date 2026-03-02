@@ -4,25 +4,45 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-
-html:focus-within{
-	scroll-behavior: smooth !important;
-	}
-
+ html{
+	scroll-padding-top: 70px;
+ }
 #Home,
 #About,
 #Work,
 #Contact{
 	height: 700px;
+	scroll-margin-top: 80px;
 }
 
 .logo{
 	width: 50px;
 		height:50px;
 }
+
+.nav-menu{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.first-section{
+	padding-top: 50px;
+}
 .navbar{
 	list-style-type: none;
 	display: flex;	
+	position: fixed;
+	border-radius: 5px;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:purple;
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	top: 0;
+	z-index: 1000;
 }
 h1, h2, p {
 	text-align: center;
@@ -30,7 +50,6 @@ h1, h2, p {
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(270deg,purple, blue);
 	
 }
 	
@@ -97,7 +116,7 @@ body {
 	gap: 10px;
 	border: none;
 	border-radius: 50px;
-	background: linear-gradient(270deg, purple, green);
+	background: linear-gradient(270deg, purple, blue);
 	cursor: pointer;
 }
 
@@ -114,14 +133,8 @@ h1{
 	background-color:#f0ba00; 
 }
 	
-	
-ul{		
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color:#f0ba00;
-}
+
+
 ul li {
 	float: left;
 }
