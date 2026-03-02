@@ -4,6 +4,22 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+body{
+	padding-top: 80px;
+}
+
+/*header styling*/
+.header{
+	width: 100%;
+	background-color: #111;
+	padding: 15px 40px;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 1000;
+
+}
+
  html{
 	scroll-padding-top: 70px;
  }
@@ -11,47 +27,52 @@
 #About,
 #Work,
 #Contact{
-	height: 700px;
+	height: 600px;
 	scroll-margin-top: 80px;
 }
 
-.logo{
-	width: 50px;
-		height:50px;
+/*Navigation menu*/
+.nav-menu{
+	list-style: none;
+	display: flex;
+	gap: 30px;
 }
 
-.nav-menu{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+/*Navigation links*/
+.nav-menu a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 500px;
+	transition: color 0.3s ease;
 }
+
+
+/*Hover effect*/
+.nav-menu a:hover{
+	color: #00bcd4;
+}
+
 .first-section{
 	padding-top: 50px;
 }
 .navbar{
-	list-style-type: none;
-	display: flex;	
-	position: fixed;
-	border-radius: 5px;
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color:purple;
-	width: 100%;
-	height: 50px;
-	text-align: right;
-	top: 0;
-	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
+/*Logo*/
+.logo{
+	width: 60px;
+	height: auto;
+	border-radius: 8px;
+}
+
 h1, h2, p {
 	text-align: center;
 }
-body {
-	margin: 0;
-	padding: 0;
-	
-}
+
 	
 .contact-container{
 	height: 100vh;
@@ -65,6 +86,21 @@ body {
 	flex-direction: column;
 	align-items: start;
 	gap: 20px;
+}
+
+/*Title and bio*/
+.home-container-left{
+	display: flex;
+	
+	align-items: start;
+	gap: 20px;
+}
+
+/*Personal image styling*/
+ img{
+	width: 250px;
+	border-radius: 5px;
+
 }
 
 .contact-left-title h2{
@@ -146,10 +182,7 @@ ul li a{
 	text-decoration: none;
 	}
 	
-ul li a:hover {
-	background-color: #005492;
-	color: white;
-	}
+
 	
 @media (max-width: 800px){
 	.contact-inputs{
@@ -157,6 +190,12 @@ ul li a:hover {
 	}
 	.contact-right{
 		display: none;
+	}
+}
+@media(max-width: 768px){
+	.navbar{
+		flex-direction: column;
+		gap: 15px;
 	}
 }
 	
