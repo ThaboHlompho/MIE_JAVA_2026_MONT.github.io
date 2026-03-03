@@ -51,40 +51,88 @@
 
     <!-- About me Section -->
     <section id="About" class="section">
-        <div class="container">
+        <div class="container about-container">
         <h2>About Me</h2>
-		<p></p>
+		<p>
+			I am a passionate and detail-oriented Front-End Developer 
+            with a strong foundation in web technologies and networking.
+            I enjoy building clean, responsive, and user-friendly interfaces.
+		</p>
+
+		<p>
+			I have worked collaboratively on a finance web application project,
+            where I contributed to UI design and front-end functionality.
+            I hold three Microsoft certifications and have academic
+            training in networking.
+
+		</p>
         <a href="vendor/Soft skills - CV.docx" download class="btn">Download CV</a>
         </div>
     </section>
 
     <!-- Work Section -->
     <section id="Work" class="section">
-     <div class="container">
-        <h2>Project & Work</h2>
-     </div>
-    </section>
+    <div class="container work-container">
+
+        <h2>Work & Project</h2>
+
+        <!-- Project Card -->
+        <div class="project-card">
+            <h3>Finance Web Application</h3>
+            <p>
+                A collaborative finance management web application 
+                built to help users track expenses and manage budgets.
+                I worked on front-end layout and interface responsiveness.
+            </p>
+
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <!-- Certificates Section -->
+        <div class="certificates">
+            <h3>Microsoft Certifications</h3>
+
+            <ul>
+                <li><a href="LINK_TO_CERT_1" target="_blank">Microsoft Certificate 1</a></li>
+                <li><a href="LINK_TO_CERT_2" target="_blank">Microsoft Certificate 2</a></li>
+                <li><a href="LINK_TO_CERT_3" target="_blank">Microsoft Certificate 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Tutoring Certificate -->
+        <div class="tutoring-cert">
+            <h3>Tutoring Certificate</h3>
+            <a href="images/tutoring-certificate.jpg" target="_blank">
+                <img src="images/tutoring-certificate.jpg" alt="Tutoring Certificate">
+            </a>
+        </div>
+
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="Contact" class="section">
         <div class="container contact-container">
 
-            <form class="contact-left">
+            <form class="contact-left" id="contact-form">
                 <h2>Contact Me</h2>
 
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email" required>
-                <textarea placeholder="Your message" required></textarea>
+                <input type="text" id="name" name="user-name" placeholder="Your name" required>
+                <input type="email" id="email"name="user-email" placeholder="Your email" required>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
 
                 <button type="submit" class="btn">Submit</button>
             </form>
 
             <div class="contact-right">
-                <img src="images/logo2.png" alt="Logo">
+                <img class="logo" src="images/logo2.png" alt="Logo">
             </div>
 
         </div>
     </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="/js/script.js"></script>
 
 	<footer>
 		<p>@Thabo Hlompho Monei</p>

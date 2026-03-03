@@ -100,7 +100,62 @@ footer{
     border-radius: 12px;
 }
 
-/* Contavt*/
+/*About*/
+.about-container {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-container p {
+    margin: 15px 0;
+}
+
+
+/*Work*/
+.work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.project-card p {
+    margin: 10px 0 20px 0;
+}
+
+.certificates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certificates li {
+    margin: 10px 0;
+}
+
+.certificates a {
+    text-decoration: none;
+    color: #031d66;
+    font-weight: 500;
+}
+
+.certificates a:hover {
+    text-decoration: underline;
+}
+
+.tutoring-cert img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Contact*/
 .contact-container {
     display: flex;
     align-items: center;
