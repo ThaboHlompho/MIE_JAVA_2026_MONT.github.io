@@ -1,3 +1,19 @@
+const button = document.getElementById("showImageBtn");
+const popup = document.getElementById("imagePopup");
+
+button.addEventListener("click", function (e) {
+  popup.style.display = "block";
+  e.stopPropagation();
+});
+
+document.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+
+popup.addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
 (function(){
     emailjs.init("jicGWEoZFFhUMSHz0");
 })();
@@ -21,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+

@@ -169,10 +169,12 @@ footer{
     gap: 40px;
 }
 
-.contact-left {
+.contact-left,
+.contact-left textarea {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 350px;
 }
 
 .contact-left input,
@@ -180,16 +182,11 @@ footer{
     padding: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 700px;
-    height: 50px;
+
 }
 
-.contact-left textarea{
-     width: 700px;
-    height: 100px;
-}
 
-.contact-left 
+
 
 .contact-right img {
     width: 250px;
@@ -220,7 +217,14 @@ footer{
 
     .home-container,
     .contact-container,
-    .work-container {
+    .work-container
+    .home-left{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        flex: 1;
         flex-direction: column;
         text-align: center;
     }
@@ -229,4 +233,4 @@ footer{
         display: none;
     }
 }
-	
+
